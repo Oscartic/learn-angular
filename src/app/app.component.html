@@ -1,20 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Bienvenido a {{ title }}!
   </h1>
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <h4>String Interpolation TypeScript => HTML:</h4>
+  <code>{{a+b}}</code>
+  <hr>
+  <h4>Property Binding TypeScript <= HTML y Event Binding (disabled y (click))</h4>
+  <button [disabled]="!listo" (click)="hacerAlgo()"> Click me! </button>
+  <hr>
+  <h4>Two way Data Binding (comunicación en ambos sentidos)</h4>
+  <p>Se debe importar el modulo de Event Binding en app.module</p>
+  <input type="text" placeholder="Tu nombre" [(ngModel)]="nombre"/>
+  <br>
+  <strong>Mi nombre es:</strong> {{ nombre }}
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<h3>Directivas</h3>
+<p>Hay tres tipos de directivas:</p>
+<code>
+  COMPONENTES: Son directivas que siempre tienen asignados templates de HTML. <br>
+  ESTRUCTURALES: Nos permiten modificar el DOM, es decir manipular elementos de HTML. <br>
+  ATRIBUTOS: A estas directivas les indicamos a través de HTML cómo se deben comportar de acuerdo con ciertas condiciones que definimos.
+</code>
