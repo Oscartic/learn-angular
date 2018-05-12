@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: "Helvetica";
+  line-height: 24px;
+}
+h2 {
+  color: #16549b;
+}
+agm-map {
+  height: 400px;
+}
+
+.numero_par {
+  background-color: aliceblue;
+  color: darkblue;
+}
