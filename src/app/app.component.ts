@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'PlatziSquare';
   lugares:any = [
-    {cercania: 1, distancia: 1, active: true, nombre: 'Donas la pasadita' },
-    {cercania: 1, distancia: 1.8, active: false, nombre: 'Veterinaria tu perro' },
-    {cercania: 2, distancia: 5, active: true, nombre: 'Abellanas el prado' },
-    {cercania: 3, distancia: 30, active: false, nombre: 'pinturita' },
-    {cercania: 2, distancia: 5, active: true, nombre: 'SuchiRoll' },
-    {cercania: 3, distancia: 120, active: false, nombre: 'Zapateria' },
+    {plan: 'gratuito',cercania: 1, distancia: 1, active: true, nombre: 'Donas la pasadita' },
+    {plan: 'pagado',cercania: 1, distancia: 1.8, active: false, nombre: 'Veterinaria tu perro' },
+    {plan: 'gratuito',cercania: 2, distancia: 5, active: true, nombre: 'Abellanas el prado' },
+    {plan: 'pagado',cercania: 3, distancia: 30, active: false, nombre: 'pinturita' },
+    {plan: 'gratuito',cercania: 2, distancia: 5, active: true, nombre: 'SuchiRoll' },
+    {plan: 'pagado',cercania: 3, distancia: 120, active: false, nombre: 'Zapateria' },
 
   ];
   lat:number = -33.4376799;
