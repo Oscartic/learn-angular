@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import {ResaltarDirective} from './directives/resaltar.directive';
+import {ContarClicksDirective} from './directives/contar-clicks.directive';
 
 
 // ngModule es donde se declaran los modulos que seran usados en nuestra app:
@@ -12,7 +13,8 @@ import {ResaltarDirective} from './directives/resaltar.directive';
   // Aqui se agregan los componentes:
   declarations: [
     AppComponent,
-    ResaltarDirective
+    ResaltarDirective,
+    ContarClicksDirective
   ],
   // Se llama todos los modulos que vamos a trabajar:
   imports: [
