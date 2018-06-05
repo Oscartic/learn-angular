@@ -6,6 +6,16 @@ import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
 import {ResaltarDirective} from './directives/resaltar.directive';
 import {ContarClicksDirective} from './directives/contar-clicks.directive';
+import {RouterModule, Routes} from '@angular/router';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {DetalleComponent} from './detalle/detalle.component';
+import {LugaresComponent} from './lugares/lugares.component';
+
+const appRoutes: Routes = [
+  {path: '', component: LugaresComponent},
+  {path: 'lugares', component: LugaresComponent},
+  {path: 'detalle', component: DetalleComponent},
+];
 
 
 // ngModule es donde se declaran los modulos que seran usados en nuestra app:
@@ -14,7 +24,9 @@ import {ContarClicksDirective} from './directives/contar-clicks.directive';
   declarations: [
     AppComponent,
     ResaltarDirective,
-    ContarClicksDirective
+    ContarClicksDirective,
+    DetalleComponent,
+    LugaresComponent
   ],
   // Se llama todos los modulos que vamos a trabajar:
   imports: [
@@ -22,7 +34,9 @@ import {ContarClicksDirective} from './directives/contar-clicks.directive';
     FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD8hTXGdoxiRvU0oHwowLUmgKEeqjkKKFc'
-    })
+    }),
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   // servicios que vamos a necesitar para la app:
   providers: [],
